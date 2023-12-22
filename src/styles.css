@@ -1,17 +1,80 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 header {
   background-image: url("/images/loveheart-crochet.jpg");
-}
-
-h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 55px;
-}
-
-.hero {
+  width: 100% auto;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  display: block;
   text-align: center;
   color: whitesmoke;
-  padding: 100px 50px;
+  padding: 50px 0px;
   text-shadow: 1px 1px 2px black;
+}
+
+header h1 {
+  font-size: 55px;
+  line-height: 1.5;
+}
+
+header h2 {
+  line-height: 1.5;
+}
+
+header h3 {
+  line-height: 1.5;
+}
+
+header a {
+  line-height: 4;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px;
+  background: burlywood;
+  border-radius: 8px;
+}
+
+header a:hover {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: goldenrod;
+  background: whitesmoke;
+}
+
+header a:visited {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: blanchedalmond;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 20px;
+    height: 190px;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  header h3 {
+    font-size: 13px;
+  }
+
+  header a {
+  }
 }
