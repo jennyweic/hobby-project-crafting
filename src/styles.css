@@ -52,6 +52,32 @@ header a:visited {
   color: blanchedalmond;
 }
 
+main {
+  background-color: bisque;
+}
+
+section {
+  padding: 50px;
+}
+
+main h3 {
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 1.5;
+  color: black;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main p,
+ul,
+li {
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
 footer {
   color: whitesmoke;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -78,10 +104,24 @@ li {
   margin: 0 auto;
 }
 
+.image1 {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
   margin: 0 auto;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols {
+  grid-template-columns: 2fr 2fr 2fr;
 }
 
 @media (max-width: 900px) {
@@ -103,5 +143,15 @@ li {
   }
 
   header a {
+  }
+
+  section,
+  footer {
+    padding: 25px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
 }
