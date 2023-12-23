@@ -69,6 +69,7 @@ main h3 {
   color: black;
   opacity: 0.3;
   text-transform: uppercase;
+  text-align: center;
 }
 
 main p,
@@ -117,6 +118,7 @@ li {
 
 .grid-2-cols {
   grid-template-columns: 1fr 1fr;
+  margin-right: 100px;
 }
 
 .section-secondary {
@@ -218,6 +220,14 @@ h2 {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+
+  .grid-2-cols {
+    margin: 30px;
+  }
+
+  .image1 {
+    width: 250px;
   }
 
   .grid.secondary-gallery {
