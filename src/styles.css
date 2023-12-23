@@ -123,7 +123,6 @@ li {
 
 .section-secondary {
   background: whitesmoke;
-  padding: 50px 100px;
   margin: 0 auto;
 }
 
@@ -140,11 +139,11 @@ h2 {
   margin: 0 auto;
 }
 
-.card {
+.card,
+.card-2 {
   background-color: white;
-  max-width: 1000px;
-  height: 500px;
-  padding: 20px;
+  height: 600px;
+  padding: 10px 30px;
 }
 
 .card-text {
@@ -152,7 +151,8 @@ h2 {
   padding: 20px;
 }
 
-.card h4 {
+.card h4,
+.card-2 h4 {
   text-align: center;
   line-height: 0.8;
   color: black;
@@ -161,16 +161,48 @@ h2 {
   letter-spacing: 5px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+}
+
+.embed {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.card-2 img {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  max-height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
 .img-fluid {
   text-align: center;
   margin: 0 auto;
-  padding: 5px;
   display: block;
   object-fit: cover;
   aspect-ratio: 1 / 1;
-  max-width: 80%;
   max-height: 100%;
-  border: 1px solid bisque;
 }
 
 .button {
@@ -227,14 +259,34 @@ h2 {
   }
 
   .image1 {
-    width: 250px;
+    width: 100%;
   }
 
-  .grid.secondary-gallery {
+  div.grid.secondary-gallery {
     grid-template-columns: 1fr;
+    width: 100% auto;
+    padding: 5px;
+    margin: 0 auto;
   }
 
-  .card {
+  img {
+    aspect-ratio: 21/9;
+  }
+
+  .embed {
+    aspect-ratio: 21 / 9;
+  }
+
+  .card,
+  .card-2 {
     height: fit-content;
+    padding: 10px 5px 50px 5px;
+  }
+
+  .card-2 img {
+    aspect-ratio: 16/9;
+  }
+
+  .img-fluid.img-responsive {
   }
 }
